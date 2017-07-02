@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <video :src="movieUrl" autoplay="true" v-on:ended="movieEnded"></video>
+    <video :src="movieUrl" autoplay="true" v-on:ended="movieEnded" @click="videoClick"></video>
   </div>
 </template>
 
@@ -112,6 +112,9 @@ export default {
       })
 
       this.movieUrl = this.movieList[this.currentMovieIndex]
+    },
+    videoClick: function() {
+      this.movieEnded()
     }
   }
 }
