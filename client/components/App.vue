@@ -19,6 +19,7 @@ html * {
 body {
   font-weight: 400;
   font-size: 1.2rem;
+  margin: 0;
 }
 
 html, body, #app {
